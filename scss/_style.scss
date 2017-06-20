@@ -99,3 +99,60 @@ body{
 		}
 	}
 }
+
+#course-list{
+
+	.accordion{
+
+		.accordion-item{
+
+			.accordion-title{
+				font-size: 1.5rem;
+				color: $primary-blue;
+				border: none;
+				&:hover, &:focus{
+					background-color: #ebf2ff;
+				}
+				&:active{
+					background-color: #ebf2ff;
+				}
+			}
+			.accordion-content{
+				color: $primary-blue;
+				border: none;
+
+				.row{
+					/*padding-left: 1rem;
+					padding-right: 1rem;*/
+				}
+				i{
+					font-size:2.0rem;
+				}
+				.misc-info{
+					div{
+						&:first-child p{
+							margin-top: 10px; 
+							margin-left: 10px;
+						}
+						p i{
+							margin-left: 10px;
+						}
+					}
+					div p span{
+						margin-right: 10px;
+						padding: 5px;
+						background-color: $primary-blue;
+						color: $white;	
+					}
+				}
+			}
+		}
+	}
+}
+
+.period{
+	padding: 5px;
+	margin: 10px;
+	background-color: $primary-blue;
+	color: $white;
+}
