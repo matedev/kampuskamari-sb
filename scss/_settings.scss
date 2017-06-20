@@ -43,6 +43,8 @@
 
 @import 'util/util';
 
+$primary-blue: #002663;
+
 // 1. Global
 // ---------
 
@@ -160,7 +162,7 @@ $defnlist-term-margin-bottom: 0.3rem;
 $blockquote-color: $dark-gray;
 $blockquote-padding: rem-calc(9 20 0 19);
 $blockquote-border: 1px solid $medium-gray;
-$cite-font-size: rem-calc(13);
+$cite-font-size: rem-calc(13)s;
 $cite-color: $dark-gray;
 $cite-pseudo-content: '\2014 \0020';
 $keystroke-font: $font-family-monospace;
@@ -413,7 +415,8 @@ $menu-margin: 0;
 $menu-margin-nested: 1rem;
 $menu-item-padding: 0.7rem 1rem;
 $menu-item-color-active: $white;
-$menu-item-background-active: get-color(primary);
+//$menu-item-background-active: get-color(primary);
+$menu-item-background-active: none;
 $menu-icon-spacing: 0.25rem;
 $menu-item-background-hover: $light-gray;
 $menu-border: $light-gray;
@@ -613,9 +616,9 @@ $tooltip-radius: $global-radius;
 // -----------
 
 $topbar-padding: 0.5rem;
-$topbar-background: $light-gray;
+//$topbar-background: $light-gray;
+$topbar-background: none;
 $topbar-submenu-background: $topbar-background;
 $topbar-title-spacing: 0.5rem 1rem 0.5rem 0;
 $topbar-input-width: 200px;
 $topbar-unstack-breakpoint: medium;
-
