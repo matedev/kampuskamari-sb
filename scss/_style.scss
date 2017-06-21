@@ -17,6 +17,10 @@ body{
 	padding-bottom: 50px;
 }
 
+.margin-10{
+	margin: 10px;
+}
+
 .top-bar{
 	border-bottom: 1px solid $primary-blue;
 
@@ -105,16 +109,44 @@ body{
 	.accordion{
 
 		.accordion-item{
-
+				a{
+					background-color: #fefefe;
+					color: $primary-blue;
+				}
+				&.selected{
+					.accordion-title{
+						font-size: 1.5rem;
+						background-color: $primary-blue;
+						color: #fefefe;
+						border: none;
+						&:hover, &:hover:focus{
+							//background-color: #ebf2ff;
+							background: $primary-blue;
+							color: #fefefe;
+							border-bottom: none;
+						}
+						&:active, &:focus{
+							//background-color: #ebf2ff;
+							background: $primary-blue;
+							color: #fefefe;
+							border-bottom: none;
+						}
+					}
+				}
 			.accordion-title{
 				font-size: 1.5rem;
 				color: $primary-blue;
 				border: none;
-				&:hover, &:focus{
-					background-color: #ebf2ff;
+				&:hover, &:hover:focus{
+					//background-color: #ebf2ff;
+					background: none;
+					border-bottom: 1px solid $primary-blue;
 				}
-				&:active{
-					background-color: #ebf2ff;
+				&:active, &:focus{
+					//background-color: #ebf2ff;
+					background: none;
+					border: none;
+					//border-bottom: 1px solid $primary-blue;
 				}
 			}
 			.accordion-content{
@@ -134,8 +166,11 @@ body{
 							margin-top: 10px; 
 							margin-left: 10px;
 						}
-						p i{
+						p img{
 							margin-left: 10px;
+						}
+						.switch{
+						    //margin: 10px;	
 						}
 					}
 					div p span{
@@ -144,15 +179,61 @@ body{
 						background-color: $primary-blue;
 						color: $white;	
 					}
+					label.switch-paddle{
+    					margin-left: 10px;
+					    margin-top: 5px;
+					}
+					.reg-box img{
+						float: left;
+						margin-left: 10px;
+					}
 				}
 			}
 		}
 	}
 }
-
-.period{
-	padding: 5px;
-	margin: 10px;
+input:checked ~ .switch-paddle {
+    background: $primary-blue;
+}
+button[type="button"]{
 	background-color: $primary-blue;
-	color: $white;
+
+	&:hover{
+		background-color: #fefefe;
+		color: $primary-blue;
+		border: 1px solid $primary-blue;
+	}
+	 &:focus{
+	 	background-color: $primary-blue;
+	 	color: #fefefe;
+	 }
+	 &:focus:hover{
+		background-color: #fefefe;
+		color: $primary-blue;
+		border: 1px solid $primary-blue;
+	 }
+}
+.reveal{
+	color: $primary-blue;
+
+	h2{
+		border-bottom: 1px solid $primary-blue;
+	}
+	label{
+		color: $primary-blue;
+	}
+	button.close-button{
+		background: none;
+		color: $primary-blue;
+
+		&:hover{
+			border: none;
+		}
+	}
+	input{
+		border: 1px solid $primary-blue;
+		&.empty{
+			border: 2px solid red;
+		}
+	}
 }
