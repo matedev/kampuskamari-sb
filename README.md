@@ -1,1 +1,1 @@
-# Kampuskamari sitbuild with Foundation
+# Kampuskamari sitebuild with Foundation
